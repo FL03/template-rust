@@ -1,0 +1,33 @@
+[package]
+authors = ["{{authors}}"]
+categories = []
+description = "{{description}}"
+edition = "{{edition}}"
+keywords = []
+license = "{{spdx-license}}"
+name = "{{crate_name}}"
+publish = "{{publish}}"
+readme = "{{readme}}"
+repository = "https://github.com/{{github_username}}/{{crate_name}}.git"
+rust-version = "{{rust_version}}"
+version = "{{crate_version}}"
+
+{% if crate_type =="bin" %}
+[[bin]]
+name = "{{crate_name}}"
+{% endif %}
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "{{crate_name}}"
+
+[[test]]
+name = "standard"
+path = "tests/standard.rs"
+
+[build-dependencies]
+
+[dependencies]
+
+[dev-dependencies]
+

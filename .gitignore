@@ -1,0 +1,22 @@
+# Config
+**/*.config.*
+!**/default.config.*
+
+# Dotenv
+**/*.env
+**/*.env.*
+!**/*.env.example
+
+# Lock Files
+**/*.lock
+**/*.lock.*
+
+# Log
+**/*.log
+**/.log.*
+
+# Rust
+/**/debug/
+/**/target/
+
+**/*.rs.bk
