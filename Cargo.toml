@@ -12,18 +12,23 @@ repository = "https://github.com/{{github_username}}/{{crate_name}}.git"
 rust-version = "{{rust_version}}"
 version = "{{crate_version}}"
 
-{% if crate_type =="bin" %}
+{% if crate_type = = "bin" % }
 [[bin]]
 name = "{{crate_name}}"
-{% endif %}
 
 [lib]
 crate-type = ["cdylib", "rlib"]
+name = "{{crate_name}}-core"
+{% else % }
+[lib]
+crate-type = ["cdylib", "rlib"]
 name = "{{crate_name}}"
+{% endif % }
 
 [[test]]
 name = "standard"
 path = "tests/standard.rs"
+test = true
 
 [build-dependencies]
 
