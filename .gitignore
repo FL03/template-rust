@@ -1,22 +1,36 @@
-# Config
+# Files
 **/*.config.*
 !**/default.config.*
 
-# Dotenv
 **/*.env
 **/*.env.*
 !**/*.env.example
 
-# Lock Files
 **/*.lock
 **/*.lock.*
+**/*-lock.json
 
-# Log
 **/*.log
 **/.log.*
 
-# Rust
-/**/debug/
-/**/target/
+**/*.rs
+**/*.rs.*
 
-**/*.rs.bk
+**/*.whl
+**/*.whl.*
+
+**/*.zip
+**/*.zip.*
+
+# Folders
+**/__pycache__/
+**/__sapper__/
+**/.DS_STORE/
+**/.docker/data/
+**/.idea/
+**/.svlete-kit/
+**/.vscode/
+**/debug/
+**/node_modules/
+**/target/
+**/venv/
