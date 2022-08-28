@@ -11,6 +11,11 @@ default = "2021"
 prompt = "edition:"
 type = "string"
 
+[placeholders.homepace]
+default = ""
+prompt = "homepage:"
+type = "string"
+
 [placeholders.spdx-license]
 default = "MIT"
 prompt = "license (SPDX)"
@@ -30,3 +35,8 @@ type = "string"
 default = ""
 prompt = "github username"
 type = "string"
+
+[placeholders.workspace]
+default = false
+prompt = "workspace:"
+type = "bool"

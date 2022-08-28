@@ -1,36 +1,67 @@
-# Files
+# Dirs
+**/__pycache__/
+**/__sapper__/
+
+**/.DS_STORE/
+**/.artifacts/
+**/.docker/data/
+**/.idea/
+**/.svelte-kit/
+**/.vscode/
+
+**/build/
+**/debug/
+**/dist/
+**/env/
+**/node_modules/
+**/target/
+**/venv/
+
+# Extensions
+**/*.bk
+**/*.bk.*
+
+**/config.*
 **/*.config.*
+
 !**/default.config.*
+
+**/*.csv
+**/*.csv.*
+
+**/*.db
+**/*.db.*
+
+**/*.db-*.*
 
 **/*.env
 **/*.env.*
-!**/*.env.example
+
+**/!*.env.example
+
+**/*.jpeg
+**/*.jpeg.*
+
+**/*.jpg
+**/*.jpg.*
 
 **/*.lock
 **/*.lock.*
-**/*-lock.json
+
+**/*-lock.*
 
 **/*.log
-**/.log.*
+**/*.log.*
 
-**/*.rs
-**/*.rs.*
+**/*.png
+**/*.png.*
+
+**/*.svg
+**/*.svg.*
 
 **/*.whl
 **/*.whl.*
 
 **/*.zip
 **/*.zip.*
-
-# Folders
-**/__pycache__/
-**/__sapper__/
-**/.DS_STORE/
-**/.docker/data/
-**/.idea/
-**/.svlete-kit/
-**/.vscode/
-**/debug/
-**/node_modules/
-**/target/
-**/venv/
+!/.gitignore

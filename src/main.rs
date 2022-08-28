@@ -1,6 +1,6 @@
 /*
-    Appellation: {{crate_name}} <library>
+    Appellation: {{crate_name}} <module>
     Creator: {{authors}}
     Description:
         {{description}}
- */
+*/
