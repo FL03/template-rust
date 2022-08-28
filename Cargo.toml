@@ -40,7 +40,6 @@ all-features = true
 rustc-args = ["--cfg", "docsrs"]
 
 {% if workspace = "bin" % }
-
 [profile.dev]
 codegen-units = 256
 debug = true
