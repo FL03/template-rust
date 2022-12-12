@@ -6,37 +6,12 @@ default = ""
 prompt = "description:"
 type = "string"
 
-[placeholders.edition]
-default = "2021"
-prompt = "edition:"
+[placeholders.origin]
+default = "{username}"
+prompt = "Git origin (username)"
 type = "string"
 
-[placeholders.homepage]
-default = ""
-prompt = "homepage:"
-type = "string"
-
-[placeholders.spdx-license]
-default = "MIT"
+[placeholders.spdx]
+default = "Apache-2.0"
 prompt = "license (SPDX)"
 type = "string"
-
-[placeholders.publish]
-default = true
-prompt = "publish"
-type = "bool"
-
-[placeholders.readme]
-default = "README.md"
-prompt = "readme"
-type = "string"
-
-[placeholders.github_username]
-default = ""
-prompt = "github username"
-type = "string"
-
-[placeholders.workspace]
-default = false
-prompt = "workspace:"
-type = "bool"

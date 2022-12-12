@@ -1,0 +1,42 @@
+[package]
+authors = ["{{authors}}"]
+categories = []
+description = "{{description}}"
+edition = "2021"
+homepage = "https://github.com/{{origin}}/{{crate_name}}/wiki"
+keywords = []
+license = "{{spdx}}"
+name = "{{crate_name}}"
+readme = "README.md"
+repository = "https://github.com/{{origin}}/{{crate_name}}.git"
+version = "{{crate_version}}"
+
+{% if crate_type = "bin" % }
+[[bin]]
+bench = false
+name = "{{crate_name}}"
+test = false
+{% endif % }
+{% if crate_type = "lib" % }
+[features]
+default = ["core"]
+full = ["core"]
+
+core = []
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "{{crate_name}}"
+test = true
+{% endif % }
+
+
+[build-dependencies]
+
+[dependencies]
+
+[dev-dependencies]
+
+[package.metadata.docs.rs]
+all-features = true
+rustc-args = ["--cfg", "docsrs"]
